@@ -13,17 +13,20 @@ export const CTASection = () => {
       <div className="relative container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center animate-fadeInDown">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Prova Social
+            Medicina do Esporte, Bem-estar De Dentro para Fora.
           </h2>
           <p className="text-lg md:text-xl text-slate-200 mb-8 leading-relaxed">
-            Depoimentos de pacientes que confiam no meu trabalho e alcançaram resultados reais.
+            Transforme sua saúde com cuidados médicos integrados, equilibrando hormônios para um bem-estar completo e duradouro.
           </p>
           <CTAButton 
             size="md" 
             onClick={handleCTA}
             className="bg-white text-custom-blue hover:bg-gray-100"
           >
-            👉 Agendar consulta agora
+            <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+            Agende uma CONSULTA
           </CTAButton>
         </div>
       </div>

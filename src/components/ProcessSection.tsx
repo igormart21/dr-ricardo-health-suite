@@ -32,58 +32,34 @@ export const ProcessSection = () => {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Se você...
-            </h3>
-            <div className="max-w-4xl mx-auto space-y-4 mb-8">
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Treina e quer ganhar massa com segurança</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Busca reposição hormonal com acompanhamento médico</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Quer emagrecer sem dietas malucas</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Deseja melhorar a performance física com saúde</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Tem hipertensão, diabetes ou obesidade e quer treinar com segurança</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="text-green-600 text-xl">✅</span>
-                <span className="text-gray-700 text-left">Valoriza um plano individualizado, feito por médico e com resultados reais</span>
-              </div>
+        <div className="bg-gray-50 p-8 md:p-12 rounded-lg shadow-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+            {/* Left Column - Headline (25% width) */}
+            <div className="lg:col-span-1 animate-fadeInLeft">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                Especialista em equilíbrio hormonal e qualidade de vida.
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Equilíbrio hormonal transforma sua saúde: viva plenamente, com eficiência e bem-estar.
+              </p>
             </div>
-            <p className="text-2xl text-gray-900 font-bold">
-              Eu posso te ajudar!
-            </p>
-          </div>
 
-          {/* Process Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="text-center animate-fadeInRight">
-                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-custom-blue mx-auto mb-6">
-                  {step.icon}
+            {/* Right Column - Process Steps (75% width, 3 columns) */}
+            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+              {processSteps.map((step, index) => (
+                <div key={index} className="text-center animate-fadeInRight">
+                  <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-custom-blue mx-auto mb-6">
+                    {step.icon}
+                  </div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-3">
+                    {step.title}
+                  </h4>
+                  <p className="text-gray-600 text-sm md:text-base">
+                    {step.description}
+                  </p>
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-3">
-                  {step.title}
-                </h4>
-                <p className="text-gray-600">
-                  {step.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

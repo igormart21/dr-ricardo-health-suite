@@ -39,9 +39,9 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+    <section className="relative py-16 md:py-24 bg-gradient-to-br from-slate-50 to-white animated-slow animate-fadeIn">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 to-white/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-white/50"></div>
       
       <div className="relative container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
@@ -55,41 +55,21 @@ export const TestimonialsSection = () => {
             </h2>
           </div>
 
-          {/* Google Reviews Summary */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-4 bg-white rounded-lg p-6 shadow-lg">
-              <div className="text-2xl font-bold text-gray-900">EXCELENTE</div>
-              <div className="flex space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                ))}
-              </div>
-              <div className="text-sm text-gray-600">
-                Com base em <strong>14 avaliações</strong>
-              </div>
+          {/* Google Reviews Widget Placeholder */}
+          <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <p className="text-gray-600 mb-4">
+              [Aqui será integrado o widget de avaliações do Google Meu Negócio]
+            </p>
+            <div className="flex justify-center items-center text-yellow-500 text-2xl mb-4">
+              {/* Star Icons */}
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+              ))}
             </div>
-          </div>
-
-          {/* Testimonials Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="flex space-x-1">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                      </svg>
-                    ))}
-                  </div>
-                  <span className="text-sm text-gray-500">{testimonial.date}</span>
-                </div>
-                <p className="text-gray-700 mb-4 leading-relaxed">{testimonial.text}</p>
-                <div className="font-semibold text-gray-900">{testimonial.name}</div>
-              </div>
-            ))}
+            <p className="text-gray-700 font-semibold">EXCELENTE</p>
+            <p className="text-sm text-gray-500">Com base em 14 avaliações</p>
           </div>
         </div>
       </div>
