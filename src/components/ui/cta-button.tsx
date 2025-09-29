@@ -19,7 +19,7 @@ export const CTAButton = ({
   const baseStyles = "font-semibold transition-all duration-300 hover:scale-105 active:scale-95 rounded-lg";
   
   const variants = {
-    primary: "bg-slate-800 text-white hover:bg-slate-700 shadow-lg hover:shadow-xl",
+    primary: "bg-custom-blue text-white hover:bg-custom-blue/90 shadow-lg hover:shadow-xl",
     secondary: "bg-gray-600 text-white hover:bg-gray-700 shadow-lg hover:shadow-xl"
   };
   

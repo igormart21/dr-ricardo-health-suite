@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-custom-blue {
+    background-color: #0e1654;
+  }
+  .text-custom-blue {
+    color: #0e1654;
+  }
+  .border-custom-blue {
+    border-color: #0e1654;
+  }
+  .hover\:bg-custom-blue:hover {
+    background-color: #0e1654;
+  }
+  .hover\:text-custom-blue:hover {
+    color: #0e1654;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

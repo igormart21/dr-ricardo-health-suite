@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h6 className="text-sm font-semibold text-slate-800 uppercase tracking-wide mb-4">
+            <h6 className="text-sm font-semibold text-custom-blue uppercase tracking-wide mb-4">
               Testemunhos
             </h6>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

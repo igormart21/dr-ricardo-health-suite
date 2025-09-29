@@ -11,7 +11,7 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
-            <h6 className="text-sm font-semibold text-slate-800 uppercase tracking-wide mb-4">
+            <h6 className="text-sm font-semibold text-custom-blue uppercase tracking-wide mb-4">
               Dr. Ricardo Pereira
             </h6>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
@@ -36,13 +36,13 @@ export const AboutSection = () => {
             {/* Floating Counter */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-full p-6 shadow-lg animate-bounceInRight">
               <div className="text-center">
-                <div className="text-3xl font-bold text-slate-800">10+</div>
+                <div className="text-3xl font-bold text-custom-blue">10+</div>
                 <div className="text-sm text-gray-600">anos de experiência</div>
               </div>
             </div>
             
             {/* Floating Icon */}
-            <div className="absolute -top-6 -left-6 bg-slate-800 rounded-full p-4 shadow-lg animate-bounceInDown">
+            <div className="absolute -top-6 -left-6 bg-custom-blue rounded-full p-4 shadow-lg animate-bounceInDown">
               <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M19 8h-1V6c0-2.76-2.24-5-5-5S8 3.24 8 6v2H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM10 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h-6V6z"/>
               </svg>

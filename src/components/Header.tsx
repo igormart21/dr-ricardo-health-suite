@@ -38,7 +38,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 hover:text-slate-800 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-custom-blue transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -48,7 +48,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-slate-800 transition-colors duration-200"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-custom-blue transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg
@@ -74,7 +74,7 @@ export const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-slate-800 hover:bg-gray-50 transition-colors duration-200 font-medium"
+                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-custom-blue hover:bg-gray-50 transition-colors duration-200 font-medium"
                 >
                   {item.label}
                 </button>

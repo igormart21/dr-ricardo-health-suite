@@ -87,7 +87,7 @@ export const SpecialtiesSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {specialties.map((specialty, index) => (
                 <div key={index} className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <div className="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-slate-800">
+                  <div className="flex-shrink-0 w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center text-custom-blue">
                     {specialty.icon}
                   </div>
                   <div>
