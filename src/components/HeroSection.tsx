@@ -6,9 +6,9 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-custom-blue/30 py-20 md:py-32">
+    <section className="relative bg-gradient-to-br from-slate-50 to-white py-20 md:py-32">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-custom-blue/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-white/50"></div>
       
       <div className="relative container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -25,23 +25,28 @@ export const HeroSection = () => {
             </CTAButton>
           </div>
 
-          {/* Right Column - Dr. Ricardo Photo */}
-          <div className="hidden lg:flex justify-center items-center h-[600px] relative">
-            {/* Background with blue overlay */}
-            <div className="absolute inset-0 bg-custom-blue/30 rounded-2xl blur-sm"></div>
-            
-            {/* Photo container */}
-            <div className="relative z-10 w-96 h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/images/DSC04981-removebg-preview.png" 
-                alt="Dr. Ricardo Pereira - Medicina do Esporte" 
-                className="w-full h-full object-cover object-center"
+          {/* Right Column - Doctor Image */}
+          <div className="hidden lg:block relative">
+            <div className="relative z-10">
+              <img
+                src="/images/DSC04981-removebg-preview.png"
+                alt="Dr. Ricardo Pereira - Medicina do Esporte"
+                className="w-full h-[600px] object-contain"
               />
             </div>
             
-            {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-custom-blue/40 rounded-full blur-lg"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-custom-blue/30 rounded-full blur-xl"></div>
+            {/* Floating Elements */}
+            <div className="absolute -top-4 -right-4 bg-white rounded-full p-4 shadow-lg">
+              <svg className="w-8 h-8 text-custom-blue" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+              </svg>
+            </div>
+            
+            <div className="absolute -bottom-4 -left-4 bg-custom-blue rounded-full p-4 shadow-lg">
+              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 8h-1V6c0-2.76-2.24-5-5-5S8 3.24 8 6v2H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM10 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h-6V6z"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
