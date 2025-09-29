@@ -14,12 +14,8 @@ export const Header = () => {
   const menuItems = [
     { id: 'hero', label: 'Início' },
     { id: 'about', label: 'Quem Sou' },
-    { id: 'benefits', label: 'Se você...' },
-    { id: 'differentials', label: 'Diferenciais' },
-    { id: 'services', label: 'Áreas de Atuação' },
-    { id: 'testimonials', label: 'Depoimentos' },
-    { id: 'contact', label: 'Contato' },
-    { id: 'faq', label: 'FAQ' }
+    { id: 'services', label: 'Serviços' },
+    { id: 'contact', label: 'Contato' }
   ];
 
   return (
