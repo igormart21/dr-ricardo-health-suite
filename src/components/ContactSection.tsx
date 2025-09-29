@@ -11,7 +11,7 @@ export const ContactSection = () => {
                 <img 
                   src="/images/Prancheta 1_2.png" 
                   alt="Dr. Ricardo Pereira - Medicina do Esporte" 
-                  className="h-16 w-auto" 
+                  className="h-20 w-auto" 
                 />
               </div>
               

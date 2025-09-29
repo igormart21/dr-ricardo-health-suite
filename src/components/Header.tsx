@@ -28,7 +28,7 @@ export const Header = () => {
             <img 
               src="/images/Prancheta 1_2.png" 
               alt="Dr. Ricardo Pereira - Medicina do Esporte" 
-              className="h-10 w-auto" 
+              className="h-12 w-auto" 
             />
           </a>
 
