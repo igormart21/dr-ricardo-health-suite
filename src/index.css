@@ -6,6 +6,21 @@
   .bg-custom-blue {
     background-color: #0e1654;
   }
+  .bg-custom-blue\/10 {
+    background-color: rgba(14, 22, 84, 0.1);
+  }
+  .bg-custom-blue\/20 {
+    background-color: rgba(14, 22, 84, 0.2);
+  }
+  .bg-custom-blue\/30 {
+    background-color: rgba(14, 22, 84, 0.3);
+  }
+  .bg-custom-blue\/40 {
+    background-color: rgba(14, 22, 84, 0.4);
+  }
+  .bg-custom-blue\/90 {
+    background-color: rgba(14, 22, 84, 0.9);
+  }
   .text-custom-blue {
     color: #0e1654;
   }
