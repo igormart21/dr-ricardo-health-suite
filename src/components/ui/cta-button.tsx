@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 interface CTAButtonProps {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
-  size?: "default" | "lg";
+  size?: "default" | "md" | "lg";
   className?: string;
   onClick?: () => void;
 }
@@ -16,16 +16,17 @@ export const CTAButton = ({
   className,
   onClick 
 }: CTAButtonProps) => {
-  const baseStyles = "relative overflow-hidden group font-rubik font-semibold transition-all duration-300 hover:scale-105 active:scale-95 ring-1 ring-white/15 hover:ring-primary/40 whitespace-nowrap";
+  const baseStyles = "font-semibold transition-all duration-300 hover:scale-105 active:scale-95 rounded-lg";
   
   const variants = {
-    primary: "bg-gradient-gold text-secondary hover:shadow-gold border-0",
-    secondary: "bg-gradient-blue text-white hover:shadow-blue border-0"
+    primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-lg hover:shadow-xl",
+    secondary: "bg-gray-600 text-white hover:bg-gray-700 shadow-lg hover:shadow-xl"
   };
   
   const sizes = {
-    default: "px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-sm sm:text-base md:text-lg min-h-[44px] w-auto",
-    lg: "px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl min-h-[52px] w-auto"
+    default: "px-6 py-3 text-base",
+    md: "px-8 py-4 text-lg",
+    lg: "px-10 py-5 text-xl"
   };
 
   return (
@@ -40,9 +41,7 @@ export const CTAButton = ({
       variant={undefined}
       size={undefined}
     >
-      {/* shimmer */}
-      <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 animate-sheen pointer-events-none" />
-      <span className="relative z-[1]">{children}</span>
+      {children}
     </Button>
   );
 };

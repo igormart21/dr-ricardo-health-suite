@@ -1,5 +1,4 @@
 import { CTAButton } from "@/components/ui/cta-button";
-import { Section, SectionHeader } from "@/components/ui/Section";
 
 export const AboutSection = () => {
   const handleCTA = () => {
@@ -7,97 +6,52 @@ export const AboutSection = () => {
   };
 
   return (
-    <Section glow="gold">
-      <div className="max-w-6xl mx-auto">
-        <SectionHeader title="Quem Sou" />
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div className="space-y-6">
+            <h6 className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
+              Dr. Ricardo Pereira
+            </h6>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              Experiência e conhecimento para ajudar e cuidar de você
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Sou clínico geral pós-graduado em Medicina do Esporte. Tenho experiência em terapia intensiva (UTI) e participei do I Congresso Brasileiro de Hormonologia (2023). O que me destaca é a forma clara como explico as coisas durante as consultas. Estou sempre me atualizando e buscando seguir a medicina baseada em evidências. Fico muito feliz em ver meus pacientes alcançando resultados, e me empenho ao máximo para ajudar nisso.
+            </p>
+            <CTAButton size="md" onClick={handleCTA}>
+              Agende uma CONSULTA
+            </CTAButton>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Imagem de apresentação */}
-            <div className="animate-fade-in">
-              <div className="relative overflow-hidden rounded-3xl border border-white/30 shadow-glass hover:shadow-glow-gold transition-all duration-500">
-                <img
-                  src="/images/DSC04977.JPG"
-                  alt="Dr. Ricardo - foto de apresentação"
-                  className="w-full h-[300px] sm:h-[400px] md:h-[520px] object-cover"
-                />
+          {/* Image and Stats */}
+          <div className="relative">
+            <div className="relative z-10">
+              <img
+                src="/images/DSC04977.JPG"
+                alt="Dr. Ricardo Pereira"
+                className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            
+            {/* Floating Stats */}
+            <div className="absolute -bottom-6 -right-6 bg-white rounded-full p-6 shadow-lg">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600">10+</div>
+                <div className="text-sm text-gray-600">anos de experiência</div>
               </div>
             </div>
-
-            {/* Content Column */}
-            <div className="animate-slide-up">
-              <div className="backdrop-blur-glass bg-gradient-glass-gold border border-white/20 p-6 md:p-8 rounded-3xl shadow-glass mb-6 md:mb-8">
-                <p className="font-rubik text-lg text-secondary mb-6 leading-relaxed italic">
-                  "Minha missão é oferecer um atendimento transparente, didático e acessível, 
-                  ajudando pacientes a alcançarem saúde e performance sem exageros, 
-                  com equilíbrio e responsabilidade."
-                </p>
-              </div>
-
-              <div className="space-y-4 md:space-y-6 mb-6 md:mb-8">
-                <h3 className="font-montserrat font-semibold text-xl md:text-2xl text-secondary mb-3 md:mb-4">
-                  Formação:
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    </div>
-                    <p className="font-rubik text-base md:text-lg text-muted-foreground">
-                      Medicina pela Unilago (São José do Rio Preto)
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    </div>
-                    <p className="font-rubik text-base md:text-lg text-muted-foreground">
-                      Pós-graduação em Medicina do Esporte – Uniguaçu
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    </div>
-                    <p className="font-rubik text-base md:text-lg text-muted-foreground">
-                      Experiência em terapia intensiva (UTI)
-                    </p>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                      </svg>
-                    </div>
-                    <p className="font-rubik text-base md:text-lg text-muted-foreground">
-                      Participação no I Congresso Brasileiro de Hormonologia (2023)
-                    </p>
-                  </div>
-                </div>
-
-                <div className="backdrop-blur-glass bg-gradient-glass-gold border border-white/20 p-4 md:p-6 rounded-2xl shadow-glass border-l-4 border-primary">
-                  <p className="font-rubik text-base md:text-lg text-secondary leading-relaxed italic">
-                    "Cristão, pai de família e praticante de atividade física, acredito que cuidar do corpo 
-                    é um ato de responsabilidade com a vida. Mais do que estética, o foco do meu trabalho é 
-                    longevidade, prevenção e qualidade de vida."
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex justify-center md:justify-start mt-6 md:mt-8">
-                <CTAButton size="lg" onClick={handleCTA}>
-                  👉 Agendar consulta agora
-                </CTAButton>
-              </div>
+            
+            {/* Floating Icon */}
+            <div className="absolute -top-6 -left-6 bg-blue-600 rounded-full p-4 shadow-lg">
+              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 8h-1V6c0-2.76-2.24-5-5-5S8 3.24 8 6v2H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM10 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h-6V6z"/>
+              </svg>
             </div>
           </div>
         </div>
-    </Section>
+      </div>
+    </section>
   );
 };

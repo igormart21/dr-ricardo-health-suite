@@ -15,29 +15,30 @@ export const Header = () => {
     { id: 'hero', label: 'Início' },
     { id: 'about', label: 'Quem Sou' },
     { id: 'services', label: 'Serviços' },
+    { id: 'testimonials', label: 'Depoimentos' },
     { id: 'contact', label: 'Contato' }
   ];
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-lg bg-white/80 border-b border-white/30 shadow-sm">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="h-16 sm:h-20 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
+      <div className="container mx-auto px-4">
+        <div className="h-16 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 sm:gap-3">
+          <a href="/" className="flex items-center gap-3">
             <img 
               src="/images/Prancheta 1_4.png" 
               alt="Dr. Ricardo Pereira - Medicina do Esporte" 
-              className="h-8 sm:h-10 md:h-12 w-auto" 
+              className="h-10 w-auto" 
             />
           </a>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary transition-colors duration-200 rounded-md hover:bg-white/50"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -47,7 +48,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-white/50 transition-colors duration-200"
+            className="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg
@@ -67,13 +68,13 @@ export const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-white/30 bg-white/90 backdrop-blur-lg">
+          <div className="md:hidden border-t bg-white">
             <nav className="py-4 space-y-2">
               {menuItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left px-4 py-3 text-sm font-medium text-gray-700 hover:text-primary hover:bg-white/50 transition-colors duration-200 rounded-md"
+                  className="block w-full text-left px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200 font-medium"
                 >
                   {item.label}
                 </button>
@@ -85,5 +86,3 @@ export const Header = () => {
     </header>
   );
 };
-
-

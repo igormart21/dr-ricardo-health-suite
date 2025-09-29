@@ -1,59 +1,74 @@
-import { Section, SectionHeader } from "@/components/ui/Section";
-
 export const TestimonialsSection = () => {
+  const testimonials = [
+    {
+      name: "Maria Silva",
+      date: "15/01/2025",
+      rating: 5,
+      text: "Dr. Ricardo é um profissional excepcional! Muito atencioso e explica tudo de forma clara. Recomendo!"
+    },
+    {
+      name: "João Santos",
+      date: "10/01/2025",
+      rating: 5,
+      text: "Excelente atendimento! O Dr. Ricardo me ajudou muito com meu problema hormonal. Profissional competente e humano."
+    },
+    {
+      name: "Ana Costa",
+      date: "05/01/2025",
+      rating: 5,
+      text: "Muito satisfeita com o tratamento! Dr. Ricardo é um médico que realmente se importa com seus pacientes."
+    }
+  ];
+
   return (
-    <Section glow="mixed" background="luxury">
-      <div className="max-w-6xl mx-auto">
-        <SectionHeader title="Prova Social" />
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h6 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">
+            Testemunhos
+          </h6>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            O que dizem meus pacientes
+          </h2>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-            {/* Google My Business Plugin */}
-            <div className="backdrop-blur-luxury bg-gradient-glass-gold border border-white/30 p-6 md:p-8 rounded-3xl shadow-glass hover:shadow-glow-gold transition-all duration-500">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-4 shadow-gold">
-                  <svg className="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                  </svg>
-                </div>
-                <h3 className="font-montserrat font-semibold text-lg md:text-xl text-secondary mb-2">
-                  Avaliações Google
-                </h3>
-                <p className="font-rubik text-sm md:text-base text-muted-foreground mb-4">
-                  Espaço para plugin do Google Meu Negócio
-                </p>
-                <div className="border-2 border-dashed border-primary/30 rounded-lg p-4 md:p-8 bg-background">
-                  <p className="text-xs md:text-sm text-muted-foreground">
-                    Plugin Google My Business será inserido aqui
-                  </p>
-                </div>
-              </div>
+        {/* Google Reviews Summary */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center space-x-2 bg-white rounded-lg p-6 shadow-lg">
+            <div className="text-2xl font-bold text-gray-900">EXCELENTE</div>
+            <div className="flex space-x-1">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              ))}
             </div>
-
-            {/* Patient Testimonials */}
-            <div className="backdrop-blur-luxury bg-gradient-glass-blue border border-white/30 p-6 md:p-8 rounded-3xl shadow-glass hover:shadow-glow-blue transition-all duration-500">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-blue rounded-full flex items-center justify-center mx-auto mb-4 shadow-blue">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M7.17 17L15.17 9H11V7h8v8h-2v-4.17L9 19H7.17z"/>
-                  </svg>
-                </div>
-                <h3 className="font-montserrat font-semibold text-lg md:text-xl text-secondary mb-2">
-                  Depoimentos de Pacientes
-                </h3>
-                <p className="font-rubik text-sm md:text-base text-muted-foreground mb-4">
-                  Relatos reais de transformação
-                </p>
-                <div className="border-2 border-dashed border-primary/30 rounded-lg p-4 md:p-8 bg-background">
-                  <p className="text-xs md:text-sm text-muted-foreground">
-                    Espaço para depoimentos de pacientes
-                  </p>
-                </div>
-              </div>
+            <div className="text-sm text-gray-600">
+              Com base em <strong>14 avaliações</strong>
             </div>
           </div>
+        </div>
 
-          {/* CTA removido conforme solicitado */}
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="flex space-x-1">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                  ))}
+                </div>
+                <span className="text-sm text-gray-500">{testimonial.date}</span>
+              </div>
+              <p className="text-gray-700 mb-4">{testimonial.text}</p>
+              <div className="font-semibold text-gray-900">{testimonial.name}</div>
+            </div>
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 };
