@@ -15,13 +15,13 @@ export const HeroSection = () => {
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Equilíbrio. Vitalidade. Saúde!
+              Mais Saúde, Mais Energia: Hipertrofia, Emagrecimento e Reposição Hormonal com Segurança.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Troque problemas como cansaço excessivo, perda de libido, dificuldade para emagrecer ou ganhar massa por bem-estar e qualidade de vida.
+              Sou o Dr. Ricardo Pereira, clínico geral pós-graduado em Medicina do Esporte. Acompanho homens e mulheres que buscam emagrecimento, equilíbrio hormonal e performance física com segurança e responsabilidade médica.
             </p>
             <CTAButton size="lg" onClick={handleCTA}>
-              Agende uma CONSULTA
+              👉 Agendar consulta agora
             </CTAButton>
           </div>
 

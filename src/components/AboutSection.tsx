@@ -15,13 +15,34 @@ export const AboutSection = () => {
               Dr. Ricardo Pereira
             </h6>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Experiência e conhecimento para ajudar e cuidar de você
+              Quem Sou
             </h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              Minha missão é oferecer um atendimento transparente, didático e acessível, ajudando pacientes a alcançarem saúde e performance sem exageros, com equilíbrio e responsabilidade.
+            </p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start space-x-3">
+                <span className="text-custom-blue text-xl">🔹</span>
+                <span className="text-gray-600">Formação em Medicina pela Unilago (São José do Rio Preto)</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-custom-blue text-xl">🔹</span>
+                <span className="text-gray-600">Pós-graduação em Medicina do Esporte – Uniguaçu</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-custom-blue text-xl">🔹</span>
+                <span className="text-gray-600">Experiência em terapia intensiva (UTI)</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-custom-blue text-xl">🔹</span>
+                <span className="text-gray-600">Participação no I Congresso Brasileiro de Hormonologia (2023)</span>
+              </div>
+            </div>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Sou clínico geral pós-graduado em Medicina do Esporte. Tenho experiência em terapia intensiva (UTI) e participei do I Congresso Brasileiro de Hormonologia (2023). O que me destaca é a forma clara como explico as coisas durante as consultas. Estou sempre me atualizando e buscando seguir a medicina baseada em evidências. Fico muito feliz em ver meus pacientes alcançando resultados, e me empenho ao máximo para ajudar nisso.
+              Cristão, pai de família e praticante de atividade física, acredito que cuidar do corpo é um ato de responsabilidade com a vida. Mais do que estética, o foco do meu trabalho é longevidade, prevenção e qualidade de vida.
             </p>
             <CTAButton size="md" onClick={handleCTA}>
-              Agende uma CONSULTA
+              👉 Agendar consulta agora
             </CTAButton>
           </div>
 

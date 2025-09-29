@@ -15,9 +15,21 @@ export const ContactSection = () => {
                 />
               </div>
               
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Clínico geral pós-graduado em Medicina do Esporte. Especialista em hipertrofia, emagrecimento e reposição hormonal com segurança.
               </p>
+              
+              <div className="mb-8">
+                <p className="text-gray-600 mb-2">
+                  📍 Consultório em Londrina
+                </p>
+                <p className="text-gray-600 mb-2">
+                  R. Paramaribo, 72 - Santa Rosa, Londrina - PR, 86050-110
+                </p>
+                <p className="text-gray-600">
+                  📞 Telefone: (43) 98427-5838
+                </p>
+              </div>
               
               {/* Social Icons */}
               <div className="mb-8">

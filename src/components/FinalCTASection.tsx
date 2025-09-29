@@ -15,9 +15,12 @@ export const FinalCTASection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Column */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                Agende uma consulta
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Mais do que cuidar da estética, meu compromisso é com a sua saúde, longevidade e qualidade de vida.
               </h3>
+              <p className="text-lg text-slate-200">
+                Se você busca acompanhamento médico sério e acessível, entre em contato e agende sua consulta. Será um prazer fazer parte da sua jornada de saúde e performance.
+              </p>
             </div>
 
             {/* Right Column */}
@@ -27,7 +30,7 @@ export const FinalCTASection = () => {
                 onClick={handleCTA}
                 className="bg-white text-custom-blue hover:bg-gray-100"
               >
-                CLIQUE AQUI
+                👉 Quero agendar minha consulta agora
               </CTAButton>
             </div>
           </div>

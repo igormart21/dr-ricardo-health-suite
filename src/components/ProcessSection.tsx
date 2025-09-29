@@ -35,11 +35,37 @@ export const ProcessSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Especialista em equilíbrio hormonal e qualidade de vida.
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Se você...
             </h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Equilíbrio hormonal transforma sua saúde: viva plenamente, com eficiência e bem-estar.
+            <div className="max-w-4xl mx-auto space-y-4 mb-8">
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Treina e quer ganhar massa com segurança</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Busca reposição hormonal com acompanhamento médico</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Quer emagrecer sem dietas malucas</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Deseja melhorar a performance física com saúde</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Tem hipertensão, diabetes ou obesidade e quer treinar com segurança</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <span className="text-green-600 text-xl">✅</span>
+                <span className="text-gray-700 text-left">Valoriza um plano individualizado, feito por médico e com resultados reais</span>
+              </div>
+            </div>
+            <p className="text-2xl text-gray-900 font-bold">
+              Eu posso te ajudar!
             </p>
           </div>
 
