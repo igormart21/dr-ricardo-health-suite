@@ -134,3 +134,13 @@ Tipografia: Rubik e Montserrat
     @apply bg-background text-foreground;
   }
 }
+
+/* Luxury micro-animations */
+@keyframes sheen {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-sheen {
+  animation: sheen 1.2s ease-in-out;
+}

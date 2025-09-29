@@ -12,6 +12,8 @@ export const FloatingParticles = () => {
       <div className="absolute top-32 right-1/4 w-2 h-2 bg-gradient-blue rounded-full opacity-40 animate-float-delay-1"></div>
       <div className="absolute bottom-32 left-1/2 w-1 h-1 bg-gradient-blue rounded-full opacity-30 animate-float-delay-2"></div>
       <div className="absolute top-1/2 right-12 w-2 h-2 bg-gradient-blue rounded-full opacity-25 animate-float-delay-3"></div>
+      {/* soft vignette */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_55%,rgba(0,0,0,0.06))]"></div>
     </div>
   );
 };

@@ -1,64 +1,63 @@
+import { Section, SectionHeader } from "@/components/ui/Section";
 export const DifferentialsSection = () => {
   const differentials = [
     {
       icon: "💬",
       title: "Explicações claras e acessíveis",
-      description: "Linguagem simples e didática para que você entenda cada etapa do tratamento"
+      description: "Explicações didáticas para que você entenda cada etapa do tratamento"
     },
     {
       icon: "⏰",
       title: "Paciência e transparência",
-      description: "Tempo dedicado para esclarecer todas as suas dúvidas sem pressa"
+      description: "Benefícios e riscos explicados de forma simples"
     },
     {
       icon: "🔍",
       title: "Avaliação completa",
-      description: "Triagem, exames, avaliação cardíaca e abdominal detalhada"
+      description: "Triagem, exames, avaliação cardíaca e abdominal"
     },
     {
       icon: "💰",
       title: "Valores acessíveis",
-      description: "Preços justos, sem promessas irreais ou milagres"
+      description: "Sem ostentação ou promessas irreais"
     },
     {
       icon: "⚖️",
       title: "Foco em vida equilibrada",
       description: "Saúde real, longevidade e qualidade de vida acima de tudo"
+    },
+    {
+      icon: "🤝",
+      title: "Atendimento humanizado",
+      description: "Cuidado personalizado com respeito e empatia em cada consulta"
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-secondary mb-4">
-              Diferenciais no Atendimento
-            </h2>
-            <div className="w-24 h-1 bg-gradient-gold mx-auto"></div>
-          </div>
+    <Section glow="mixed">
+      <div className="max-w-6xl mx-auto">
+        <SectionHeader title="Diferenciais no Atendimento" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {differentials.map((item, index) => (
               <div 
                 key={index}
-                className="backdrop-blur-luxury bg-gradient-glass border border-white/30 p-8 rounded-3xl shadow-glass hover:shadow-glow-gold transition-all duration-500 text-center animate-scale-in group hover:scale-105"
+                className="backdrop-blur-luxury bg-gradient-glass border border-white/30 p-6 md:p-8 rounded-3xl shadow-glass hover:shadow-glow-gold transition-all duration-500 text-center animate-scale-in group hover:scale-105"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-4xl md:text-5xl mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
-                <h3 className="font-montserrat font-semibold text-xl text-secondary mb-4">
+                <h3 className="font-montserrat font-semibold text-lg md:text-xl text-secondary mb-3 md:mb-4">
                   {item.title}
                 </h3>
-                <p className="font-rubik text-muted-foreground leading-relaxed">
+                <p className="font-rubik text-sm md:text-base text-muted-foreground leading-relaxed">
                   {item.description}
                 </p>
               </div>
             ))}
           </div>
-        </div>
       </div>
-    </section>
+    </Section>
   );
 };
