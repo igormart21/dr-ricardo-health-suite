@@ -26,19 +26,22 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Column - Dr. Ricardo Photo */}
-          <div className="hidden lg:flex justify-center items-center h-[400px] relative">
-            <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl">
-              {/* Background with blue overlay */}
-              <div className="absolute inset-0 bg-custom-blue/20 rounded-full"></div>
-              {/* Dr. Ricardo's photo */}
+          <div className="hidden lg:flex justify-center items-center h-[500px] relative">
+            {/* Background with blue overlay */}
+            <div className="absolute inset-0 bg-custom-blue/20 rounded-2xl blur-sm"></div>
+            
+            {/* Photo container */}
+            <div className="relative z-10 w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="/images/DSC04981-removebg-preview.png" 
                 alt="Dr. Ricardo Pereira - Medicina do Esporte" 
                 className="w-full h-full object-cover object-center"
               />
-              {/* Blue overlay for depth */}
-              <div className="absolute inset-0 bg-custom-blue/10 rounded-full"></div>
             </div>
+            
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-custom-blue/30 rounded-full blur-lg"></div>
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-custom-blue/20 rounded-full blur-xl"></div>
           </div>
         </div>
       </div>
