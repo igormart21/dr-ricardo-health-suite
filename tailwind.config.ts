@@ -115,6 +115,20 @@ export default {
             transform: "scale(1)"
           }
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px) translateX(0px)",
+            opacity: "0.3"
+          },
+          "33%": {
+            transform: "translateY(-20px) translateX(10px)",
+            opacity: "0.8"
+          },
+          "66%": {
+            transform: "translateY(-10px) translateX(-15px)",
+            opacity: "0.6"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -122,16 +136,35 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-up": "slide-up 0.6s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
+        "float": "float 8s ease-in-out infinite",
+        "float-delay-1": "float 10s ease-in-out infinite 2s",
+        "float-delay-2": "float 12s ease-in-out infinite 4s",
+        "float-delay-3": "float 9s ease-in-out infinite 6s",
       },
       backgroundImage: {
         'gradient-gold': 'var(--gradient-gold)',
+        'gradient-gold-radial': 'var(--gradient-gold-radial)',
         'gradient-blue': 'var(--gradient-blue)',
+        'gradient-blue-radial': 'var(--gradient-blue-radial)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-luxury': 'var(--gradient-luxury)',
+        'gradient-glass': 'var(--gradient-glass)',
+        'gradient-glass-gold': 'var(--gradient-glass-gold)',
+        'gradient-glass-blue': 'var(--gradient-glass-blue)',
       },
       boxShadow: {
         'gold': 'var(--shadow-gold)',
         'blue': 'var(--shadow-blue)',
         'elegant': 'var(--shadow-elegant)',
+        'glass': 'var(--shadow-glass)',
+        'glass-inset': 'var(--shadow-glass-inset)',
+        'glow-gold': 'var(--shadow-glow-gold)',
+        'glow-blue': 'var(--shadow-glow-blue)',
+      },
+      backdropBlur: {
+        'xs': '2px',
+        'glass': '12px',
+        'luxury': '16px',
       },
     },
   },

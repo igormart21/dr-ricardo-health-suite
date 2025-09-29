@@ -32,7 +32,7 @@ export const ServicesSection = () => {
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="bg-background p-8 rounded-2xl shadow-elegant hover:shadow-blue transition-all duration-300 text-center animate-fade-in group hover:-translate-y-2"
+                className="backdrop-blur-luxury bg-gradient-glass border border-white/20 p-8 rounded-3xl shadow-glass hover:shadow-glow-blue transition-all duration-500 text-center animate-fade-in group hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 text-4xl group-hover:scale-110 transition-transform duration-300">

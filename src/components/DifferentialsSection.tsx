@@ -42,7 +42,7 @@ export const DifferentialsSection = () => {
             {differentials.map((item, index) => (
               <div 
                 key={index}
-                className="bg-gradient-subtle p-8 rounded-2xl shadow-elegant hover:shadow-gold transition-all duration-300 text-center animate-scale-in group hover:scale-105"
+                className="backdrop-blur-luxury bg-gradient-glass border border-white/30 p-8 rounded-3xl shadow-glass hover:shadow-glow-gold transition-all duration-500 text-center animate-scale-in group hover:scale-105"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">

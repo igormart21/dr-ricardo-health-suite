@@ -1,4 +1,5 @@
 import { CTAButton } from "@/components/ui/cta-button";
+import { FloatingParticles } from "@/components/FloatingParticles";
 
 export const HeroSection = () => {
   const handleCTA = () => {
@@ -7,9 +8,17 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-subtle flex items-center py-20">
-      <div className="container mx-auto px-6">
+    <section className="min-h-screen relative overflow-hidden flex items-center py-20">
+      {/* Luxury Background */}
+      <div className="absolute inset-0 bg-gradient-luxury"></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-gold-radial blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-blue-radial blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <FloatingParticles />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto text-center animate-fade-in">
+          {/* Glass Hero Card */}
+          <div className="backdrop-blur-luxury bg-gradient-glass border border-white/20 rounded-3xl p-12 shadow-glass">
           <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl text-secondary mb-6 leading-tight">
             Mais Saúde, Mais Energia:{" "}
             <span className="bg-gradient-gold bg-clip-text text-transparent">
@@ -30,6 +39,7 @@ export const HeroSection = () => {
             <CTAButton size="lg" onClick={handleCTA}>
               👉 Agendar consulta agora
             </CTAButton>
+          </div>
           </div>
         </div>
       </div>

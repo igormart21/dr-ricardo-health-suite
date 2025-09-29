@@ -9,7 +9,7 @@ export const ClosingSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-subtle p-12 rounded-3xl shadow-elegant">
+          <div className="backdrop-blur-luxury bg-gradient-glass border border-white/30 p-12 rounded-3xl shadow-glass hover:shadow-glow-gold transition-all duration-500">
             <h2 className="font-montserrat font-bold text-3xl md:text-4xl text-secondary mb-8">
               Compromisso com Sua Saúde
             </h2>

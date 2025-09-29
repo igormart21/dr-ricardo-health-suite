@@ -27,7 +27,7 @@ export const BenefitsSection = () => {
             {benefits.map((benefit, index) => (
               <div 
                 key={index}
-                className="flex items-start gap-4 p-6 bg-background rounded-xl shadow-elegant hover:shadow-gold transition-all duration-300 animate-fade-in"
+                className="flex items-start gap-4 p-6 backdrop-blur-glass bg-gradient-glass border border-white/20 rounded-2xl shadow-glass hover:shadow-glow-gold hover:scale-105 transition-all duration-500 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="bg-gradient-gold p-2 rounded-full flex-shrink-0">

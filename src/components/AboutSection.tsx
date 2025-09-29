@@ -19,9 +19,9 @@ export const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Video Column */}
             <div className="animate-fade-in">
-              <div className="aspect-video bg-muted rounded-2xl border-2 border-dashed border-primary/30 flex items-center justify-center shadow-elegant">
+              <div className="aspect-video backdrop-blur-glass bg-gradient-glass border border-white/30 rounded-3xl flex items-center justify-center shadow-glass hover:shadow-glow-gold transition-all duration-500">
                 <div className="text-center p-8">
-                  <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-4 shadow-gold">
                     <svg className="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
@@ -35,7 +35,7 @@ export const AboutSection = () => {
 
             {/* Content Column */}
             <div className="animate-slide-up">
-              <div className="bg-accent/50 p-8 rounded-2xl shadow-elegant mb-8">
+              <div className="backdrop-blur-glass bg-gradient-glass-gold border border-white/20 p-8 rounded-3xl shadow-glass mb-8">
                 <p className="font-rubik text-lg text-secondary mb-6 leading-relaxed italic">
                   "Minha missão é oferecer um atendimento transparente, didático e acessível, 
                   ajudando pacientes a alcançarem saúde e performance sem exageros, 
@@ -75,7 +75,7 @@ export const AboutSection = () => {
                   </div>
                 </div>
 
-                <div className="bg-secondary/5 p-6 rounded-xl border-l-4 border-primary">
+                <div className="backdrop-blur-glass bg-gradient-glass-blue border border-white/20 p-6 rounded-2xl shadow-glass border-l-4 border-primary">
                   <p className="font-rubik text-lg text-secondary leading-relaxed italic">
                     "Cristão, pai de família e praticante de atividade física, acredito que cuidar do corpo 
                     é um ato de responsabilidade com a vida. Mais do que estética, o foco do meu trabalho é 
