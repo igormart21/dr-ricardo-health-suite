@@ -17,19 +17,35 @@ const Index = () => {
   return (
     <div className="min-h-screen font-rubik">
       <Header />
-      <HeroSection />
+      <section id="hero">
+        <HeroSection />
+      </section>
       <TrustBar />
       <StatsSection />
-      <AboutSection />
-      <BenefitsSection />
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="benefits">
+        <BenefitsSection />
+      </section>
       <ProcessSection />
-      <DifferentialsSection />
-      <ServicesSection />
+      <section id="differentials">
+        <DifferentialsSection />
+      </section>
+      <section id="services">
+        <ServicesSection />
+      </section>
       <PremiumCTASection />
-      <TestimonialsSection />
-      <ContactSection />
+      <section id="testimonials">
+        <TestimonialsSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
       <ClosingSection />
-      <FAQSection />
+      <section id="faq">
+        <FAQSection />
+      </section>
     </div>
   );
 };
