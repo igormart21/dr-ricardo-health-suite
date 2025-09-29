@@ -35,7 +35,7 @@ export const DifferentialsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h6 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">
+            <h6 className="text-sm font-semibold text-slate-800 uppercase tracking-wide mb-4">
               Por que escolher?
             </h6>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -47,7 +47,7 @@ export const DifferentialsSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {differentials.map((differential, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-800 mx-auto mb-6">
                   {differential.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">

@@ -6,9 +6,9 @@ export const FinalCTASection = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-br from-blue-600 to-blue-700">
+    <section className="relative py-16 md:py-24 bg-gradient-to-br from-slate-800 to-slate-900">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-blue-700/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800/90 to-slate-900/90"></div>
       
       <div className="relative container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -25,7 +25,7 @@ export const FinalCTASection = () => {
               <CTAButton 
                 size="md" 
                 onClick={handleCTA}
-                className="bg-white text-blue-600 hover:bg-gray-100"
+                className="bg-white text-slate-800 hover:bg-gray-100"
               >
                 CLIQUE AQUI
               </CTAButton>

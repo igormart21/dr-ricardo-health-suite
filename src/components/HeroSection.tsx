@@ -6,9 +6,9 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 md:py-32">
+    <section className="relative bg-gradient-to-br from-slate-50 to-white py-20 md:py-32">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-white/50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-white/50"></div>
       
       <div className="relative container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

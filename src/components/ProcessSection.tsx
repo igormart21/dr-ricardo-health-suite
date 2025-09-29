@@ -47,7 +47,7 @@ export const ProcessSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center animate-fadeInRight">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mx-auto mb-6">
+                <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-800 mx-auto mb-6">
                   {step.icon}
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-3">
