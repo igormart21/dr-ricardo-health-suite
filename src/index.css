@@ -2,126 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Medical Landing Page Design System - Dr. Ricardo Pereira 
-Paleta: Dourado, Azul Profundo, Branco, Cinza Médio, Bege Suave
-Tipografia: Rubik e Montserrat
-*/
-
 @layer base {
   :root {
-    /* Medical Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 225 74% 19%;
-
+    --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
-    --card-foreground: 225 74% 19%;
-
+    --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
-    --popover-foreground: 225 74% 19%;
-
-    /* Primary - Dourado */
-    --primary: 51 100% 50%;
-    --primary-foreground: 225 74% 19%;
-    --primary-dark: 43 74% 49%;
-    
-    /* Secondary - Azul Profundo */
-    --secondary: 225 74% 19%;
-    --secondary-foreground: 0 0% 100%;
-
-    /* Neutral tones */
-    --muted: 60 56% 91%;
-    --muted-foreground: 0 0% 32%;
-
-    --accent: 60 56% 91%;
-    --accent-foreground: 225 74% 19%;
-
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 60 56% 91%;
-    --input: 60 56% 91%;
-    --ring: 51 100% 50%;
-
-    --radius: 0.75rem;
-    
-    /* Luxury Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%), hsl(43 74% 49%));
-    --gradient-gold-radial: radial-gradient(circle at 50% 50%, hsl(51 100% 50% / 0.8), hsl(43 74% 49% / 0.6));
-    --gradient-blue: linear-gradient(135deg, hsl(225 74% 19%), hsl(225 74% 25%));
-    --gradient-blue-radial: radial-gradient(circle at 30% 70%, hsl(225 74% 19% / 0.4), transparent);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(60 56% 91%));
-    --gradient-luxury: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(60 56% 91% / 0.8));
-    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.25), hsl(0 0% 100% / 0.1));
-    --gradient-glass-gold: linear-gradient(135deg, hsl(51 100% 50% / 0.15), hsl(43 74% 49% / 0.1));
-    --gradient-glass-blue: linear-gradient(135deg, hsl(225 74% 19% / 0.15), hsl(225 74% 25% / 0.1));
-    
-    /* Luxury Shadows */
-    --shadow-gold: 0 20px 60px -10px hsl(51 100% 50% / 0.4);
-    --shadow-blue: 0 20px 60px -10px hsl(225 74% 19% / 0.3);
-    --shadow-elegant: 0 25px 80px -15px hsl(225 74% 19% / 0.15);
-    --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.08);
-    --shadow-glass-inset: inset 0 1px 0 0 hsl(0 0% 100% / 0.15);
-    --shadow-glow-gold: 0 0 60px hsl(51 100% 50% / 0.3);
-    --shadow-glow-blue: 0 0 60px hsl(225 74% 19% / 0.2);
-    
-    /* Luxury Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-glass: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --ring: 224.3 76.3% 94.1%;
   }
 }
 
@@ -129,18 +53,91 @@ Tipografia: Rubik e Montserrat
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
   }
 }
 
-/* Luxury micro-animations */
-@keyframes sheen {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+/* Custom Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-.animate-sheen {
-  animation: sheen 1.2s ease-in-out;
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 0.8s ease-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.animate-bounceInDown {
+  animation: bounceInDown 1s ease-out;
+}
+
+.animate-bounceInRight {
+  animation: bounceInRight 1s ease-out;
 }
