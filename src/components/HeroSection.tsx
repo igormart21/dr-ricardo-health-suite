@@ -25,9 +25,20 @@ export const HeroSection = () => {
             </CTAButton>
           </div>
 
-          {/* Right Column - Empty for now */}
-          <div className="hidden lg:block">
-            {/* Space for future image */}
+          {/* Right Column - Dr. Ricardo Photo */}
+          <div className="hidden lg:flex justify-center items-center h-[400px] relative">
+            <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl">
+              {/* Background with blue overlay */}
+              <div className="absolute inset-0 bg-custom-blue/20 rounded-full"></div>
+              {/* Dr. Ricardo's photo */}
+              <img 
+                src="/images/DSC04981-removebg-preview.png" 
+                alt="Dr. Ricardo Pereira - Medicina do Esporte" 
+                className="w-full h-full object-cover object-center"
+              />
+              {/* Blue overlay for depth */}
+              <div className="absolute inset-0 bg-custom-blue/10 rounded-full"></div>
+            </div>
           </div>
         </div>
       </div>
