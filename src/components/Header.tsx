@@ -26,7 +26,7 @@ export const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3">
             <img 
-              src="/images/Prancheta 1_4.png" 
+              src="/images/Prancheta 1_2.png" 
               alt="Dr. Ricardo Pereira - Medicina do Esporte" 
               className="h-10 w-auto" 
             />

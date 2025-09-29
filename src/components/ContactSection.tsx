@@ -6,11 +6,13 @@ export const ContactSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Contact Info */}
             <div>
-              {/* Logo placeholder */}
+              {/* Logo */}
               <div className="mb-6">
-                <div className="w-32 h-16 bg-gray-200 rounded flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Logo Dr. Ricardo</span>
-                </div>
+                <img 
+                  src="/images/Prancheta 1_2.png" 
+                  alt="Dr. Ricardo Pereira - Medicina do Esporte" 
+                  className="h-16 w-auto" 
+                />
               </div>
               
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
