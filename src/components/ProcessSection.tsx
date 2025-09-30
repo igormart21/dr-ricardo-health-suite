@@ -63,15 +63,17 @@ export const ProcessSection = () => {
             <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="text-center animate-fadeInRight group">
-                  <div className="mx-auto mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                    {step.icon}
+                  <div className="flex flex-col items-center">
+                    <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                      {step.icon}
+                    </div>
+                    <h4 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-custom-blue transition-colors duration-300">
+                      {step.title}
+                    </h4>
+                    <p className="text-gray-600 text-sm md:text-base">
+                      {step.description}
+                    </p>
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-custom-blue transition-colors duration-300">
-                    {step.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm md:text-base">
-                    {step.description}
-                  </p>
                 </div>
               ))}
             </div>
