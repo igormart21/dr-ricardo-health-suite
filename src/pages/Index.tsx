@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { AboutSection } from "@/components/AboutSection";
+import { IfYouSection } from "@/components/IfYouSection";
 import { DifferentialsSection } from "@/components/DifferentialsSection";
 import { CTASection } from "@/components/CTASection";
 import { SpecialtiesSection, SpecialtiesOverlapSection } from "@/components/SpecialtiesSection";
@@ -19,6 +20,7 @@ const Index = () => {
       <section id="about">
         <AboutSection />
       </section>
+      <IfYouSection />
       <DifferentialsSection />
       <CTASection />
       <section id="services">
