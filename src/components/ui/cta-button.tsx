@@ -24,9 +24,9 @@ export const CTAButton = ({
   };
   
   const sizes = {
-    default: "px-6 py-3 text-base",
-    md: "px-8 py-4 text-lg",
-    lg: "px-10 py-5 text-xl"
+    default: "px-4 py-2 md:px-6 md:py-3 text-sm md:text-base",
+    md: "px-6 py-3 md:px-8 md:py-4 text-base md:text-lg",
+    lg: "px-6 py-3 md:px-10 md:py-5 text-base md:text-lg lg:text-xl"
   };
 
   return (

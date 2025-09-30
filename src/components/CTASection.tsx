@@ -6,7 +6,7 @@ export const CTASection = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+    <section className="relative py-12 md:py-16 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-custom-blue/10 to-transparent"></div>
@@ -19,16 +19,16 @@ export const CTASection = () => {
             <div className="inline-flex items-center px-4 py-2 bg-custom-blue/20 backdrop-blur-sm rounded-full border border-custom-blue/30 mb-6">
               <span className="text-white text-sm font-semibold uppercase tracking-wide">Compromisso</span>
             </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             Medicina do Esporte, Bem-estar De Dentro para Fora.
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
             Transforme sua saúde com cuidados médicos integrados, equilibrando hormônios para um bem-estar completo e duradouro.
           </p>
           <CTAButton 
             size="lg" 
             onClick={handleCTA}
-            className="bg-custom-blue hover:bg-gradient-to-r hover:from-custom-blue hover:to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300"
+            className="!bg-custom-blue hover:!bg-gradient-to-r hover:!from-custom-blue hover:!to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300 w-full sm:w-auto"
           >
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>

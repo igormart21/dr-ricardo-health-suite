@@ -63,7 +63,7 @@ export const SpecialtiesSection = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 md:py-20 lg:py-32 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-custom-blue/10 to-transparent"></div>
@@ -72,29 +72,29 @@ export const SpecialtiesSection = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               Especialidades
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
               Cuidados médicos personalizados para saúde, bem-estar e equilíbrio hormonal.
             </p>
-            <CTAButton size="lg" onClick={handleCTA} className="bg-custom-blue hover:bg-gradient-to-r hover:from-custom-blue hover:to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300">
+            <CTAButton size="lg" onClick={handleCTA} className="!bg-custom-blue hover:!bg-gradient-to-r hover:!from-custom-blue hover:!to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300 w-full sm:w-auto">
               👉 Agende uma CONSULTA
             </CTAButton>
           </div>
 
           {/* Right Column - Doctor Image */}
-          <div className="hidden lg:block relative">
+          <div className="block relative mt-8 lg:mt-0">
             <div className="relative z-10">
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-custom-blue/20 to-blue-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 <img
                   src="/images/DSC04949.JPG"
                   alt="Dr. Ricardo Pereira - Especialidades"
-                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl relative z-10 group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover rounded-2xl shadow-2xl relative z-10 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
@@ -165,25 +165,25 @@ export const SpecialtiesOverlapSection = () => {
   ];
 
   return (
-    <section className="relative -mt-32 z-20">
+    <section className="relative -mt-16 md:-mt-32 z-20">
       <div className="container mx-auto px-4">
-        <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-2xl shadow-2xl border border-white/20">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+        <div className="bg-white/80 backdrop-blur-xl p-6 md:p-8 lg:p-12 rounded-2xl shadow-2xl border border-white/20">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 items-center">
             {/* Left Column - Headline (25% width) */}
             <div className="lg:col-span-1 animate-fadeInLeft">
               <div className="inline-flex items-center px-3 py-1 bg-custom-blue/10 rounded-full mb-4">
                 <span className="text-custom-blue text-xs font-semibold uppercase tracking-wide">Especialidades</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
                 Áreas de atuação especializada.
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 Cuidados médicos personalizados para saúde, bem-estar e equilíbrio hormonal.
               </p>
             </div>
 
             {/* Right Column - Specialties (75% width, 3 columns) */}
-            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {specialties.map((specialty, index) => (
                 <div key={index} className="text-center animate-fadeInRight group">
                   <div className="mx-auto mb-6 transform group-hover:scale-110 transition-transform duration-300">
@@ -191,10 +191,10 @@ export const SpecialtiesOverlapSection = () => {
                       {specialty.icon}
                     </div>
                   </div>
-                  <h4 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-custom-blue transition-colors duration-300">
+                  <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:text-custom-blue transition-colors duration-300">
                     {specialty.title}
                   </h4>
-                  <p className="text-gray-600 text-sm md:text-base">
+                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                     {specialty.description}
                   </p>
                 </div>

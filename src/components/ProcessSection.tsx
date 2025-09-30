@@ -42,35 +42,35 @@ export const ProcessSection = () => {
   ];
 
   return (
-    <section className="relative -mt-32 z-10">
+    <section className="relative -mt-16 md:-mt-32 z-10">
       <div className="container mx-auto px-4">
-        <div className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-2xl shadow-2xl border border-white/20">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center">
+        <div className="bg-white/80 backdrop-blur-xl p-6 md:p-8 lg:p-12 rounded-2xl shadow-2xl border border-white/20">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 items-center">
             {/* Left Column - Headline (25% width) */}
             <div className="lg:col-span-1 animate-fadeInLeft">
               <div className="inline-flex items-center px-3 py-1 bg-custom-blue/10 rounded-full mb-4">
                 <span className="text-custom-blue text-xs font-semibold uppercase tracking-wide">Especialista</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
                 Especialista em equilíbrio hormonal e qualidade de vida.
               </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 Equilíbrio hormonal transforma sua saúde: viva plenamente, com eficiência e bem-estar.
               </p>
             </div>
 
             {/* Right Column - Process Steps (75% width, 3 columns) */}
-            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="text-center animate-fadeInRight group">
                   <div className="flex flex-col items-center">
                     <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                       {step.icon}
                     </div>
-                    <h4 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-custom-blue transition-colors duration-300">
+                    <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:text-custom-blue transition-colors duration-300">
                       {step.title}
                     </h4>
-                    <p className="text-gray-600 text-sm md:text-base">
+                    <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                       {step.description}
                     </p>
                   </div>
