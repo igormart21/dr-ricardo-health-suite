@@ -1,9 +1,5 @@
-import { CTAButton } from "@/components/ui/cta-button";
 
 export const SpecialtiesSection = () => {
-  const handleCTA = () => {
-    window.open("https://wa.me/5543984275838", "_blank");
-  };
 
   const specialties = [
     {
@@ -78,12 +74,9 @@ export const SpecialtiesSection = () => {
             <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               Especialidades
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
               Cuidados médicos personalizados para saúde, bem-estar e equilíbrio hormonal.
             </p>
-            <CTAButton size="lg" onClick={handleCTA} className="!bg-custom-blue hover:!bg-gradient-to-r hover:!from-custom-blue hover:!to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300 w-full sm:w-auto">
-              👉 Agende uma CONSULTA
-            </CTAButton>
           </div>
 
           {/* Right Column - Doctor Image */}
