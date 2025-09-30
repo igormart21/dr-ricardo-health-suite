@@ -94,7 +94,7 @@ export const SpecialtiesSection = () => {
                 <img
                   src="/images/DSC04949.JPG"
                   alt="Dr. Ricardo Pereira - Especialidades"
-                  className="w-full h-[600px] object-cover rounded-2xl shadow-2xl relative z-10 group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl relative z-10 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
