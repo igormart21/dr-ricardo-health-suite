@@ -23,7 +23,7 @@ export const AboutSection = () => {
           {/* Right Column - Image and Floating Elements */}
           <div className="relative animate-fadeInRight">
             {/* Floating Counter */}
-            <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 bg-white/90 backdrop-blur-sm rounded-full p-3 sm:p-4 md:p-6 shadow-xl border border-white/20 animate-bounceInRight">
+            <div className="absolute top-0 left-0 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 bg-white/90 backdrop-blur-sm rounded-full p-3 sm:p-4 md:p-6 shadow-xl border border-white/20 animate-bounceInRight z-20">
               <div className="text-center">
                 <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-custom-blue">10+</div>
                 <div className="text-xs sm:text-sm text-gray-600">anos de experiência</div>
