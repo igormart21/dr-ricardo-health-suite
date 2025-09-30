@@ -26,9 +26,6 @@ export const IfYouSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Header */}
           <div className="mb-12">
-            <div className="inline-flex items-center px-4 py-2 bg-custom-blue/10 backdrop-blur-sm rounded-full border border-custom-blue/20 mb-6">
-              <span className="text-custom-blue text-sm font-semibold uppercase tracking-wide">Se você...</span>
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
               Se você...
             </h2>
