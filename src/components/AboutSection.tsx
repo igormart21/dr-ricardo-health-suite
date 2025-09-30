@@ -1,56 +1,51 @@
-import { CTAButton } from "@/components/ui/cta-button";
-
 export const AboutSection = () => {
-  const handleCTA = () => {
-    window.open("https://wa.me/5543984275838", "_blank");
-  };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 right-20 w-64 h-64 bg-custom-blue/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
-            <h6 className="text-sm font-semibold text-custom-blue uppercase tracking-wide mb-4">
-              Dr. Ricardo Pereira
-            </h6>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               Experiência e conhecimento para ajudar e cuidar de você
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed">
               Sou clínico geral pós-graduado em Medicina do Esporte. Tenho experiência em terapia intensiva (UTI) e participei do I Congresso Brasileiro de Hormonologia (2023). O que me destaca é a forma clara como explico as coisas durante as consultas. Estou sempre me atualizando e buscando seguir a medicina baseada em evidências. Fico muito feliz em ver meus pacientes alcançando resultados, e me empenho ao máximo para ajudar nisso.
             </p>
-            <CTAButton size="md" onClick={handleCTA}>
-              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-              </svg>
-              Agende uma CONSULTA
-            </CTAButton>
           </div>
 
           {/* Right Column - Image and Floating Elements */}
           <div className="relative animate-fadeInRight">
-            {/* Spacer for layout */}
-            <div className="h-8"></div>
-            
             {/* Floating Counter */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-full p-6 shadow-lg animate-bounceInRight">
+            <div className="absolute -top-6 -left-6 bg-white/90 backdrop-blur-sm rounded-full p-6 shadow-xl border border-white/20 animate-bounceInRight">
               <div className="text-center">
                 <div className="text-3xl font-bold text-custom-blue">10+</div>
                 <div className="text-sm text-gray-600">anos de experiência</div>
               </div>
             </div>
-            
-            {/* Floating Icon */}
-            <div className="absolute -top-6 -left-6 bg-custom-blue rounded-full p-4 shadow-lg animate-bounceInDown">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 8h-1V6c0-2.76-2.24-5-5-5S8 3.24 8 6v2H7c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM10 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2h-6V6z"/>
-              </svg>
-            </div>
 
-            {/* Image placeholder */}
-            <div className="w-full h-[500px] bg-gray-200 rounded-lg flex items-center justify-center">
-              <span className="text-gray-500">Foto do Dr. Ricardo</span>
+            {/* Image */}
+            <div className="w-full flex flex-col items-center justify-center">
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-custom-blue/20 to-blue-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                <img
+                  src="/images/DSC04962.JPG"
+                  alt="Dr. Ricardo Pereira - Medicina do Esporte"
+                  className="w-80 h-80 object-cover rounded-full shadow-2xl mb-6 relative z-10 group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="relative bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl max-w-md border border-white/20">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-white/90 rotate-45 border-l border-t border-white/20"></div>
+                <p className="text-lg text-gray-700 text-center leading-relaxed italic">
+                  "Minha missão é oferecer um atendimento transparente, didático e acessível, ajudando pacientes a alcançarem saúde e performance sem exageros, com equilíbrio e responsabilidade."
+                </p>
+              </div>
             </div>
           </div>
         </div>

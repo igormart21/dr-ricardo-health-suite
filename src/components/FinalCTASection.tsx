@@ -23,9 +23,9 @@ export const FinalCTASection = () => {
             {/* Right Column */}
             <div className="text-center lg:text-right">
               <CTAButton 
-                size="md" 
+                size="lg" 
                 onClick={handleCTA}
-                className="bg-white text-custom-blue hover:bg-gray-100"
+                className="bg-white text-custom-blue hover:bg-gradient-to-r hover:from-white hover:to-gray-100"
               >
                 CLIQUE AQUI
               </CTAButton>
