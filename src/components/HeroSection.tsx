@@ -16,7 +16,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="animate-fadeInLeft">
+          <div className="animate-fadeInLeft text-center lg:text-left">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               Mais Saúde, Mais Energia: Hipertrofia, Emagrecimento e Reposição Hormonal com Segurança.
             </h1>
@@ -38,7 +38,7 @@ export const HeroSection = () => {
                 <img
                   src="/images/DSC04981-removebg-preview.png"
                   alt="Dr. Ricardo Pereira - Medicina do Esporte"
-                  className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-contain relative z-10"
+                  className="w-full h-[500px] sm:h-[450px] md:h-[550px] lg:h-[650px] object-contain relative z-10"
                 />
               </div>
             </div>
