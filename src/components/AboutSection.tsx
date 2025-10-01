@@ -4,15 +4,15 @@ export const AboutSection = () => {
     <section className="py-12 md:py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-custom-blue/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-brand-blue/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-brand-gold/5 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-brand-blue mb-4 md:mb-6 leading-tight">
               Experiência e conhecimento para ajudar e cuidar de você
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
@@ -25,7 +25,7 @@ export const AboutSection = () => {
             {/* Floating Counter */}
             <div className="absolute top-0 left-0 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 bg-white/90 backdrop-blur-sm rounded-full p-3 sm:p-4 md:p-6 shadow-xl border border-white/20 animate-bounceInRight z-20">
               <div className="text-center">
-                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-custom-blue">10+</div>
+                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-brand-gold to-brand-gold-dark bg-clip-text text-transparent">10+</div>
                 <div className="text-xs sm:text-sm text-gray-600">anos de experiência</div>
               </div>
             </div>
@@ -33,7 +33,7 @@ export const AboutSection = () => {
             {/* Image */}
             <div className="w-full flex flex-col items-center justify-center">
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-custom-blue/20 to-blue-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/20 to-brand-gold-dark/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 <img
                   src="/images/DSC04962.JPG"
                   alt="Dr. Ricardo Pereira - Medicina do Esporte"

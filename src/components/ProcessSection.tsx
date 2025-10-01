@@ -48,10 +48,10 @@ export const ProcessSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 items-center">
             {/* Left Column - Headline (25% width) */}
             <div className="lg:col-span-1 animate-fadeInLeft">
-              <div className="inline-flex items-center px-3 py-1 bg-custom-blue/10 rounded-full mb-4">
-                <span className="text-custom-blue text-xs font-semibold uppercase tracking-wide">Especialista</span>
+              <div className="inline-flex items-center px-3 py-1 bg-brand-gold/10 rounded-full mb-4">
+                <span className="bg-gradient-to-r from-brand-gold to-brand-gold-dark bg-clip-text text-transparent text-xs font-semibold uppercase tracking-wide">Especialista</span>
               </div>
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-3 md:mb-4 leading-tight">
                 Especialista em equilíbrio hormonal e qualidade de vida.
               </h3>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -67,7 +67,7 @@ export const ProcessSection = () => {
                     <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
                       {step.icon}
                     </div>
-                    <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:text-custom-blue transition-colors duration-300">
+                    <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:bg-gradient-to-r group-hover:from-brand-gold group-hover:to-brand-gold-dark group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                       {step.title}
                     </h4>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">

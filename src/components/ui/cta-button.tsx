@@ -19,8 +19,8 @@ export const CTAButton = ({
   const baseStyles = "font-semibold transition-all duration-300 hover:scale-105 active:scale-95 rounded-lg";
   
   const variants = {
-    primary: "!bg-custom-blue !text-white hover:!bg-gradient-to-r hover:!from-custom-blue hover:!to-gray-600 hover:!text-white shadow-lg hover:shadow-xl",
-    secondary: "!bg-gray-600 !text-white hover:!bg-gradient-to-r hover:!from-gray-600 hover:!to-gray-700 hover:!text-white shadow-lg hover:shadow-xl"
+    primary: "!bg-gradient-to-r !from-brand-gold !to-brand-gold-dark !text-brand-blue hover:!from-brand-gold-dark hover:!to-brand-gold hover:!text-brand-blue shadow-lg hover:shadow-gold font-semibold",
+    secondary: "!bg-gradient-to-r !from-brand-gold !to-brand-gold-dark !text-brand-blue hover:!from-brand-gold-dark hover:!to-brand-gold hover:!text-brand-blue shadow-lg hover:shadow-gold"
   };
   
   const sizes = {

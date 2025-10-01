@@ -55,7 +55,7 @@ export const IfYouSection = () => {
             <p className="text-base md:text-lg text-gray-600 mb-4 md:mb-6">
               Entre em contato e agende sua consulta para começar sua jornada de transformação.
             </p>
-            <CTAButton size="lg" onClick={handleCTA} className="!bg-custom-blue hover:!bg-gradient-to-r hover:!from-custom-blue hover:!to-gray-600 shadow-2xl hover:shadow-custom-blue/25 transition-all duration-300">
+            <CTAButton size="lg" onClick={handleCTA}>
               👉 Agende uma CONSULTA
             </CTAButton>
           </div>

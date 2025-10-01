@@ -59,19 +59,19 @@ export const SpecialtiesSection = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-16 md:py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-brand-blue via-brand-blue to-slate-900 py-16 md:py-20 lg:py-32 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-custom-blue/10 to-transparent"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-l from-blue-500/20 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-custom-blue/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-brand-gold/10 to-transparent"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-l from-brand-gold/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-brand-blue/5 rounded-full blur-2xl"></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fadeInLeft">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight bg-gradient-to-r from-white to-brand-gold bg-clip-text text-transparent">
               Especialidades
             </h1>
             <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
@@ -83,7 +83,7 @@ export const SpecialtiesSection = () => {
           <div className="block relative mt-8 lg:mt-0">
             <div className="relative z-10">
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-custom-blue/20 to-blue-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/20 to-brand-gold-dark/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
                 <img
                   src="/images/DSC04949.JPG"
                   alt="Dr. Ricardo Pereira - Especialidades"
@@ -164,10 +164,10 @@ export const SpecialtiesOverlapSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 items-center">
             {/* Left Column - Headline (25% width) */}
             <div className="lg:col-span-1 animate-fadeInLeft">
-              <div className="inline-flex items-center px-3 py-1 bg-custom-blue/10 rounded-full mb-4">
-                <span className="text-custom-blue text-xs font-semibold uppercase tracking-wide">Especialidades</span>
+              <div className="inline-flex items-center px-3 py-1 bg-brand-gold/10 rounded-full mb-4">
+                <span className="bg-gradient-to-r from-brand-gold to-brand-gold-dark bg-clip-text text-transparent text-xs font-semibold uppercase tracking-wide">Especialidades</span>
               </div>
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-brand-blue mb-3 md:mb-4 leading-tight">
                 Áreas de atuação especializada.
               </h3>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
@@ -184,7 +184,7 @@ export const SpecialtiesOverlapSection = () => {
                       {specialty.icon}
                     </div>
                   </div>
-                  <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:text-custom-blue transition-colors duration-300">
+                  <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-2 md:mb-3 group-hover:bg-gradient-to-r group-hover:from-brand-gold group-hover:to-brand-gold-dark group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                     {specialty.title}
                   </h4>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
